@@ -1,9 +1,15 @@
 describe("Ticket", function() {
   describe("base", function() {
-    it("establishes the base price of the ticket as $5 for an old movie", function() {
+    it("establishes the base price of the ticket as $10", function() {
       var testTicket = Object.create(Ticket);
-      testTicket.base(5);
-      expect(testTicket.price).to.equal(5);
+      testTicket.getPrice();
+      expect(testTicket.getPrice()).to.equal(10);
+    });
+
+    it("establishes the base price of the ticket as $7 for a old movie", function() {
+      var testTicket = Object.create(Ticket);
+          testTicket.movieOld();
+      expect(testTicket.getPrice()).to.equal(7);
     });
   });
 });
