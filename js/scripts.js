@@ -8,12 +8,12 @@ var Ticket = {
     this.old = true;
   },
 
-  viewingTime: function(curtain){
-    this.matinee = curtain;
+  viewingTime: function(){
+    this.matinee = true;
   },
 
-  buyerAge: function(seniorchild){
-    this.seniorchild = seniorchild;
+  buyerAge: function(){
+    this.seniorchild = true;
   },
 
 
